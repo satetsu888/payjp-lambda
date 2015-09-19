@@ -12,3 +12,7 @@ https://satetsu888.github.io/payjp-lambda/form.html
 ## 関連情報
 
 [pay.jpのチュートリアル](https://github.com/payjp/user-docs/blob/master/tutorial/README.md)
+
+## License
+
+MIT, Donationware
