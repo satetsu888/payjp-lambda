@@ -1,0 +1,20 @@
+{
+  "name": "payjp-lambda",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/*",
+    "zip": "zip -r payjp-lambda.zip index.js config.js node_modules/*"
+  },
+  "author": "satetsu888",
+  "license": "MIT",
+  "devDependencies": {
+    "aws-sdk": "^2.2.0",
+    "mocha": "^2.3.2",
+    "nock": "^2.10.0"
+  },
+  "dependencies": {
+    "request": "^2.61.0"
+  }
+}
