@@ -8,7 +8,7 @@
     "zip": "zip -r payjp-lambda.zip index.js config.js node_modules/*"
   },
   "author": "satetsu888",
-  "license": "MIT",
+  "license": "MIT, Donationware",
   "devDependencies": {
     "aws-sdk": "^2.2.0",
     "mocha": "^2.3.2",
