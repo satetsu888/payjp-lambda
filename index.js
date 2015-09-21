@@ -28,6 +28,6 @@ exports.handler = function(event, context){
             api_response = JSON.stringify(response);
         }
 
-        context.done(api_response);
+        context.succeed(api_response);
     });
 }

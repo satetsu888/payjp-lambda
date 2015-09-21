@@ -14,7 +14,7 @@ describe('basic',function(){
         };
         var context = {
             invokeid: 'invokeid',
-                done: function(err,message){
+                succeed: function(message){
                     testDone();
                 return;
             }
