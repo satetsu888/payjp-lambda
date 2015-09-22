@@ -1,20 +1,31 @@
 <head>
     <title>payjp-lambda demo and donation</title>
+    <style>
+        li {
+            margin: 10px;
+        }
+    </style>
 </head>
 <body>
     <h1>payjp-lambda demo and donation</h1>
     <p>
-        <a href="https://github.com/satetsu888/payjp-lambda">payjp-lambda</a>のデモページ兼寄付ページです。
+        <a href="https://github.com/satetsu888/payjp-lambda">payjp-lambda</a>のデモページ兼寄付ページです。<br>
         下記フォームより、payjp-lambdaの動作確認および寄付ができます :)
     </p>
 
-    <form action="https://hjv0svhyhd.execute-api.us-east-1.amazonaws.com/production/payment" method="post">
-        <script src="https://checkout.pay.jp/" class="payjp-button" data-key="pk_test_69229927ba6c9ecaf85be984" data-partial="true"></script>
-        amount: <input type="text" name="amount">
-        currency:
-        <select name="currency">
-            <option value="jpy">jpy</option>
-        </select>
-        <input type="submit" value="submit">
-    </form>
+    <h2>サンプルフォーム</h2>
+    <div style="border-style: solid; border-width: 2px; padding: 10px;">
+        <form action="https://hjv0svhyhd.execute-api.us-east-1.amazonaws.com/production/payment" method="post">
+            <ul>
+                <li>価格: <input type="text" name="amount" value="500"></li>
+                <li>通貨:
+                    <select name="currency">
+                        <option value="jpy">jpy</option>
+                    </select>
+                </li>
+                <li><script src="https://checkout.pay.jp/" class="payjp-button" data-key="pk_test_69229927ba6c9ecaf85be984" data-partial="true"></script></li>
+                <li><input type="submit" value="寄付する"></li>
+            </ul>
+        </form>
+    <div>
 </body>
